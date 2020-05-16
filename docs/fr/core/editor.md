@@ -1,25 +1,25 @@
 # L'éditeur
 
-Au cœur de Zettlr se trouve un puissant éditeur de Markdown. Il utilise un logiciel très sophistiqué appelé **[CodeMirror](https://codemirror.net/)** et offre donc de nombreuses fonctionnalités prêtes à l'emploi.
+Au cœur de Zettlr se trouve un puissant éditeur Markdown. Il utilise un logiciel très sophistiqué appelé **[CodeMirror](https://codemirror.net/)** et offre donc de nombreuses fonctionnalités prêtes à l'emploi.
 
-Dans ce document, vous apprendrez à écrire Markdown, les commandes disponibles, certaines caractéristiques spéciales de CodeMirror et comment fonctionne la vérification orthographique.
+Dans ce document, vous apprendrez à écrire en Markdown, les commandes disponibles, certaines caractéristiques spéciales de CodeMirror et comment fonctionne la vérification orthographique.
 
 ## Écrire Markdown
 
-L'idée derrière Zettlr est de supprimer les balises et le style inutiles de votre processus d'écriture. Au cours du processus d'écriture, ce qui compte, c'est le _contenu_ que vous produisez, et non la forme sous laquelle il est présenté. Un peu de formatage est bien sûr prévu. Mais en ce qui concerne les couleurs et l'alignement du texte, personne n'a vraiment besoin de beaucoup d'options pour obtenir l'écriture. Le formatage, c'est ce qui se passe _après_.
+L'idée derrière Zettlr est de supprimer les balises et le style inutiles lorsque vous écrivez. Au cours de votre travail, ce qui compte, c'est le _contenu_ que vous produisez, et non la forme sous laquelle il est présenté. Un peu de formatage est bien sûr prévu. Mais en ce qui concerne les couleurs et l'alignement du texte, personne n'a vraiment besoin de beaucoup d'options lorsqu'il écrit. Le formatage, c'est ce qui se passe _après_.
 
-C'est pourquoi Zettlr vous permet d'écrire des fichiers `Markdown`. La démarque est un langage de balisage très simple qui ne contient qu'une petite quantité de symboles de formatage que vous connaissez peut-être déjà ! Ces dernières années, de plus en plus d'applications ont découvert la puissance de Markdown, et même WhatsApp l'utilise pour permettre un formatage simple des messages.
+C'est pourquoi Zettlr vous permet d'écrire des fichiers `Markdown`. Markdown est un langage de balisage très simple qui ne contient qu'une petite quantité de symboles de formatage que vous connaissez peut-être déjà ! Ces dernières années, de plus en plus d'applications ont découvert la puissance de Markdown, et même WhatsApp l'utilise pour permettre un formatage simple des messages.
 
-Un document de démarquage n'est constitué que de texte pur et présente de nombreux avantages :
+Un document Markdown n'est constitué que de texte pur, et cela présente de nombreux avantages :
 
-* La démarque est **indépendante de la plate-forme**. Tout fichier Markdown écrit sur macOS peut -- sans aucune conversion -- être édité sous Windows et Linux. Tout ce dont vous avez besoin est un éditeur de texte. Et avec "Notepad" (Windows), "TextEdit" (macOS) ou "GEdit" (Ubuntu), chaque système d'exploitation en a déjà un intégré.
+* Markdown est **indépendante de la plate-forme**. Tout fichier Markdown écrit sur macOS peut -- sans aucune conversion -- être édité sous Windows et Linux. Tout ce dont vous avez besoin est un éditeur de texte. Et avec "Notepad" (Windows), "TextEdit" (macOS) ou "GEdit" (Ubuntu), chaque système d'exploitation en a déjà un intégré.
 * La syntaxe de Markdown est conçue de telle manière que **même sans aucune mise en évidence syntaxique, vous avez l'idée d'un document Markdown**. Même sans style, il est facile de repérer toutes les rubriques, car elles sont précédées d'un signe dièse (#), les listes sont indiquées par des puces ou des chiffres et le texte souligné est encapsulé dans des traits de soulignement ou des astérisques.
-* Markdown est une **norme source ouverte**, ce qui signifie que tout le monde peut l'implémenter dans un logiciel (comme nous l'avons fait !) et commencer à le développer. Cela signifie également que vous pouvez **vous attendre à ce que la plupart des applications le comprennent**.
-* Comme Markdown est si simple et n'ajoute pas de formatage par lui-même, n'importe quelle application peut introduire une façon différente de prévisualisation. **Il existe des tonnes d'applications Markdown qui utilisent différentes approches de l'écriture**. Si Zettlr ne vous convient pas, vous pouvez toujours choisir parmi une pléthore d'applications libres et open source.
-* Les documents de marquage ne contiennent que la simple nécessité d'un formatage pour aider les applications à le comprendre. C'est pourquoi les documents **Markdown sont environ dix fois plus petits que les formats de traitement de texte classiques** !
+* Markdown est une **norme libre et ouverte**, ce qui signifie que tout le monde peut l'implémenter dans un logiciel (comme nous l'avons fait !) et commencer à le développer. Cela signifie également que vous pouvez **vous attendre à ce que la plupart des applications le comprennent**.
+* Comme Markdown est simple et n'ajoute pas de formatage par lui-même, n'importe quelle application peut proposer une façon différente de prévisualisation. **Il existe des tonnes d'applications Markdown qui utilisent différentes approches de l'écriture**. Si Zettlr ne vous convient pas, vous pouvez toujours choisir parmi une pléthore d'applications libres et open source.
+* Les documents Markdown ne contiennent que la simple nécessité d'un formatage pour aider les applications à le comprendre. C'est pourquoi les documents **Markdown sont environ dix fois plus petits que les formats de traitement de texte classiques** !
 * Et bien d'autres encore ...
 
-> Si vous voulez savoir exactement ce que la démarque peut faire et ce qu'elle ne peut pas faire, consultez la [Section **Markdown**](../reference/markdown-basics.md).
+> Si vous voulez savoir exactement ce que Markdown peut faire et ce qu'elle ne peut pas faire, consultez la [Section **Markdown**](../reference/markdown-basics.md).
 
 ## Editer du texte
 
@@ -44,7 +44,7 @@ Ensuite, à un moment donné, vous souhaitez copier un texte de Zettlr mais de m
 
 ## Particularités du CodeMirror
 
-Le CodeMirror étant très puissant, il existe d'autres options intéressantes que vous pouvez utiliser (si vous en avez besoin).
+CodeMirror étant très puissant, il existe d'autres options intéressantes que vous pouvez utiliser (si vous en avez besoin).
 
 * Pressez `Cmd` (macOS) ou `Alt` (Windows/Linux) et cliquez quelque part dans le texte. Vous aurez maintenant **deux curseurs** à votre disposition ! Ceci est surtout utile si vous êtes sur le point d'écrire un texte plusieurs fois pour gagner du temps. Pour quitter ce mode multi-curseur, il vous suffit de cliquer n'importe où dans le texte sans avoir à appuyer sur les touches de modification.
 * Pressez `Cmd` (macOS) ou `Alt` (Windows/Linux) et sélectionnez un texte. Vous pouvez maintenant **sélectionner plusieurs portions de texte** à la fois. Ceci est utile si vous voulez créer deux ou plusieurs liens à la fois : Sélectionnez simplement les portions de texte qui doivent servir de description à ces liens et appuyez sur `Cmd/Ctrl+K` pour transformer toutes les sélections en liens — en une seule fois ! Cela fonctionne avec toutes les autres commandes, comme la mise en gras ou en italique du texte, ou la création de guillemets.
